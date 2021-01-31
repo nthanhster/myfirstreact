@@ -8,7 +8,7 @@ import TomatoButton from './components/TomatoButton';
 
 function App() {
   const [visible, setVisible]= useState(true)
-  console.log(visible)
+
 
   return (
     <>
@@ -19,6 +19,7 @@ function App() {
             onClick={() => setVisible(!visible)} 
           >  
           Hide input box!
+
           </TomatoButton>
           {visible === true ?   
           <input placeholder = "Your input"></input>
